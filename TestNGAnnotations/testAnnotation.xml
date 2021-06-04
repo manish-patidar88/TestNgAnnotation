@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Annotations">
+	<test name="Annotations">
+		<classes>
+			<class name="com.project.test.Testcases.TestAnnotation"></class>
+		</classes>
+	</test>
+	<test name="GroupTest">
+		<groups>
+			<run>
+				<include name="sanity"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.project.test.Testcases.GroupTest"></class>
+		</classes>
+	</test>
+	<test name="DependentsOnTest">
+		<classes>
+			<class name="com.project.test.Testcases.DependentsOnTest"></class>
+		</classes>
+	</test>
+	<test name="ParameterTest1">
+		<parameter name="username" value="manish.patidar@gmail.com"></parameter>
+		<parameter name="password" value="Test@123"></parameter>
+		<classes>
+			<class name="com.project.test.Testcases.ParametersInTestNg"></class>
+
+		</classes>
+	</test>
+	<test name="ParameterTest2">
+		<parameter name="username" value="Rahul.Singh@gmail.com"></parameter>
+		<parameter name="password" value="Test@1234"></parameter>
+		<classes>
+			<class name="com.project.test.Testcases.ParametersInTestNg"></class>
+
+		</classes>
+	</test>
+	
+	<test name="DataProviderTest">		
+		<classes>
+			<class name="com.project.test.Testcases.DataProviderInTestNG"></class>
+		</classes>
+	</test>
+	
+	<test name="EnableAndDisabled">		
+		<classes>
+			<class name="com.project.test.Testcases.EnableAndDisable"></class>
+		</classes>
+	</test>
+	
+</suite>

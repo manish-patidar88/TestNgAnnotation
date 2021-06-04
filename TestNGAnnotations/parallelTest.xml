@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test execution" parallel="tests">
+	<test name="Parallel test1" parallel="tests" thread-count="3">	
+		<parameter name="URL" value="https://www.toolsqa.com/testng/testng-parallel-execution/"></parameter>
+		<classes>
+			<class name="com.project.test.Testcases.ChromeTest_ParallelExecution"></class>
+		</classes>
+	</test>
+	<test name="Parallel test2" parallel="true" thread-count="3">	
+		<parameter name="URL" value="https://www.edureka.co/blog/cheatsheets/java-exceptions-cheat-sheet/"></parameter>
+		<classes>
+			<class name="com.project.test.Testcases.ChromeTest_ParallelExecution"></class>
+		</classes>
+	</test>
+</suite>

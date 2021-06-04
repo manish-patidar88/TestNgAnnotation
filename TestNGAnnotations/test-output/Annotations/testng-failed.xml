@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Annotations]">
+  <test thread-count="5" name="DependentsOnTest(failed)">
+    <classes>
+      <class name="com.project.test.Testcases.DependentsOnTest">
+        <methods>
+          <include name="signIn"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.project.test.Testcases.DependentsOnTest -->
+    </classes>
+  </test> <!-- DependentsOnTest(failed) -->
+</suite> <!-- Failed suite [Annotations] -->

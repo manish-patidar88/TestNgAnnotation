@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite groups]" parallel="tests">
+  <test thread-count="5" name="Groups Test(failed)">
+    <groups>
+      <run>
+        <include name="SmokeLogin"/>
+        <include name="API"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.project.test.group.LoginTest">
+        <methods>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.project.test.group.LoginTest -->
+      <class name="com.project.test.group.APITestCases1">
+        <methods>
+          <include name="APISubTest1_0"/>
+          <include name="APITestCase1"/>
+        </methods>
+      </class> <!-- com.project.test.group.APITestCases1 -->
+    </classes>
+  </test> <!-- Groups Test(failed) -->
+</suite> <!-- Failed suite [Suite groups] -->
