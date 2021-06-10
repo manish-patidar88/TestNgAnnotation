@@ -1,124 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="1" ignored="0" total="5" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite groups" duration-ms="64" started-at="2021-06-04T12:30:06Z" finished-at="2021-06-04T12:30:06Z">
+  <suite name="Default suite" duration-ms="74" started-at="2021-06-10T13:32:26Z" finished-at="2021-06-10T13:32:26Z">
     <groups>
-      <group name="SmokeLogin">
-        <method signature="LoginTest.test()[pri:0, instance:com.project.test.group.LoginTest@5622fdf]" name="test" class="com.project.test.group.LoginTest"/>
-      </group> <!-- SmokeLogin -->
-      <group name="API">
-        <method signature="APITestCases2.APITestCase2()[pri:0, instance:com.project.test.group.APITestCases2@7d9d1a19]" name="APITestCase2" class="com.project.test.group.APITestCases2"/>
-        <method signature="APITestCases1.APISubTest1_0()[pri:0, instance:com.project.test.group.APITestCases1@4883b407]" name="APISubTest1_0" class="com.project.test.group.APITestCases1"/>
-        <method signature="APITestCases1.APITestCase1()[pri:0, instance:com.project.test.group.APITestCases1@4883b407]" name="APITestCase1" class="com.project.test.group.APITestCases1"/>
-        <method signature="APITestCases1.APISubTest1_2()[pri:0, instance:com.project.test.group.APITestCases1@4883b407]" name="APISubTest1_2" class="com.project.test.group.APITestCases1"/>
-      </group> <!-- API -->
     </groups>
-    <test name="Groups Test" duration-ms="64" started-at="2021-06-04T12:30:06Z" finished-at="2021-06-04T12:30:06Z">
-      <class name="com.project.test.group.APITestCases1">
-        <test-method status="PASS" signature="APISubTest1_2()[pri:0, instance:com.project.test.group.APITestCases1@4883b407]" name="APISubTest1_2" duration-ms="15" started-at="2021-06-04T12:30:06Z" finished-at="2021-06-04T12:30:06Z">
+    <test name="Default test" duration-ms="74" started-at="2021-06-10T13:32:26Z" finished-at="2021-06-10T13:32:26Z">
+      <class name="com.project.test.dataprovider.MultipleDataProvider">
+        <test-method status="PASS" signature="test1(java.lang.String)[pri:0, instance:com.project.test.dataprovider.MultipleDataProvider@7cd62f43]" name="test1" duration-ms="10" started-at="2021-06-10T13:32:26Z" data-provider="getData" finished-at="2021-06-10T13:32:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manish]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- APISubTest1_2 -->
-        <test-method status="SKIP" signature="APISubTest1_0()[pri:0, instance:com.project.test.group.APITestCases1@4883b407]" name="APISubTest1_0" duration-ms="0" depends-on-groups="SmokeLogin" started-at="2021-06-04T12:30:06Z" finished-at="2021-06-04T12:30:06Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method APITestCases1.APISubTest1_0()[pri:0, instance:com.project.test.group.APITestCases1@4883b407] depends on not successfully finished methods in group "SmokeLogin"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method APITestCases1.APISubTest1_0()[pri:0, instance:com.project.test.group.APITestCases1@4883b407] depends on not successfully finished methods in group "SmokeLogin"
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1(java.lang.String)[pri:0, instance:com.project.test.dataprovider.MultipleDataProvider@7cd62f43]" name="test1" duration-ms="1" started-at="2021-06-10T13:32:26Z" data-provider="getData" finished-at="2021-06-10T13:32:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[patidar]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- APISubTest1_0 -->
-        <test-method status="SKIP" signature="APITestCase1()[pri:0, instance:com.project.test.group.APITestCases1@4883b407]" name="APITestCase1" duration-ms="0" depends-on-groups="SmokeLogin" started-at="2021-06-04T12:30:06Z" finished-at="2021-06-04T12:30:06Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method APITestCases1.APITestCase1()[pri:0, instance:com.project.test.group.APITestCases1@4883b407] depends on not successfully finished methods in group "SmokeLogin"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method APITestCases1.APITestCase1()[pri:0, instance:com.project.test.group.APITestCases1@4883b407] depends on not successfully finished methods in group "SmokeLogin"
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1(java.lang.String)[pri:0, instance:com.project.test.dataprovider.MultipleDataProvider@7cd62f43]" name="test1" duration-ms="1" started-at="2021-06-10T13:32:26Z" data-provider="getData" finished-at="2021-06-10T13:32:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[automation]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- APITestCase1 -->
-      </class> <!-- com.project.test.group.APITestCases1 -->
-      <class name="com.project.test.group.LoginTest">
-        <test-method status="FAIL" signature="test()[pri:0, instance:com.project.test.group.LoginTest@5622fdf]" name="test" duration-ms="16" started-at="2021-06-04T12:30:06Z" finished-at="2021-06-04T12:30:06Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.project.test.group.LoginTest.test(LoginTest.java:10)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2(com.project.test.dataprovider.Employee)[pri:0, instance:com.project.test.dataprovider.MultipleDataProvider@7cd62f43]" name="test2" duration-ms="1" started-at="2021-06-10T13:32:26Z" data-provider="getDataEmp" finished-at="2021-06-10T13:32:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.project.test.dataprovider.Employee@71bbf57e]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.project.test.group.LoginTest -->
-      <class name="com.project.test.group.APITestCases2">
-        <test-method status="PASS" signature="APITestCase2()[pri:0, instance:com.project.test.group.APITestCases2@7d9d1a19]" name="APITestCase2" duration-ms="0" started-at="2021-06-04T12:30:06Z" finished-at="2021-06-04T12:30:06Z">
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test2(com.project.test.dataprovider.Employee)[pri:0, instance:com.project.test.dataprovider.MultipleDataProvider@7cd62f43]" name="test2" duration-ms="1" started-at="2021-06-10T13:32:26Z" data-provider="getDataEmp" finished-at="2021-06-10T13:32:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.project.test.dataprovider.Employee@51cdd8a]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- APITestCase2 -->
-      </class> <!-- com.project.test.group.APITestCases2 -->
-    </test> <!-- Groups Test -->
-  </suite> <!-- Suite groups -->
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test2(com.project.test.dataprovider.Employee)[pri:0, instance:com.project.test.dataprovider.MultipleDataProvider@7cd62f43]" name="test2" duration-ms="1" started-at="2021-06-10T13:32:26Z" data-provider="getDataEmp" finished-at="2021-06-10T13:32:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.project.test.dataprovider.Employee@23faf8f2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- com.project.test.dataprovider.MultipleDataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

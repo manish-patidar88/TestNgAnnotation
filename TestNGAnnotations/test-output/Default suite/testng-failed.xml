@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project.test.Testcases.ChromeTest">
+      <class name="com.project.test.dataprovider.MultipleDataProvider">
         <methods>
-          <include name="setUp"/>
-          <include name="afterTest"/>
-          <include name="chromeTestMethod"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- com.project.test.Testcases.ChromeTest -->
+      </class> <!-- com.project.test.dataprovider.MultipleDataProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
